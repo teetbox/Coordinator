@@ -8,37 +8,22 @@
 
 import UIKit
 
-protocol Coordinator {
-    func start()
-}
-
-class OneCoordinator: Coordinator {
+class OneCoordinator: AppCoordinator {
     
-    let window: UIWindow
-    
-    init(window: UIWindow) {
-        self.window = window
-        print("One Coordinator init")
-    }
-    
-    deinit {
-        print("One Coordinator deinit")
-    }
-    
-    func start() {
-        let oneViewModel = OneViewModel()
-        oneViewModel.coordinator = self
-        let oneViewController = OneViewController(viewModel: oneViewModel)
-        window.rootViewController = UINavigationController(rootViewController: oneViewController)
+    override func start() {
+        let oneVM = OneViewModel()
+        oneVM.coordinator = self
+        let oneVC = OneViewController(viewModel: oneVM)
+        let rootNavi = UINavigationController(rootViewController: oneVC)
+        window.rootViewController = rootNavi
     }
 
 }
 
 extension OneCoordinator: OneViewModelCoordinator {
     
-    func goNext() {
-        let twoCoordinator = TwoCoordinator(window: window)
-        twoCoordinator.start()
+    func toNext() {
+        TwoCoordinator(window: window).start()
     }
     
 }

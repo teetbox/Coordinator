@@ -8,28 +8,26 @@
 
 import UIKit
 
-class OneViewController: BaseViewController<OneViewModel> {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = .white
-        
-        print("One VC init")
-        
-        let nextButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.setTitleColor(.black, for: .normal)
-        nextButton.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
+class OneViewController: ViewModelController<OneViewModel> {
+    
+    // MARK: - View
+    
+    let nextButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
+    
+    override func setupViews() {
         view.addSubview(nextButton)
+        nextButton.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
     }
     
-    deinit {
-        print("One VC deinit")
-    }
+    // MARK: - Action
     
     @objc func handleNext() {
-        viewModel.next()
+        viewModel.showNext()
     }
 
 }

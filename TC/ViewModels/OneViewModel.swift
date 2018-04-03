@@ -9,23 +9,15 @@
 import Foundation
 
 protocol OneViewModelCoordinator {
-    func goNext()
+    func toNext()
 }
 
-class OneViewModel: ViewModel {
+class OneViewModel: ViewModelProtocol {
     
     var coordinator: OneViewModelCoordinator?
     
-    init() {
-        print("One VM init")
-    }
-    
-    deinit {
-        print("One VM deinit")
-    }
-    
-    func next() {
-        coordinator?.goNext()
+    func showNext() {
+        coordinator?.toNext()
     }
     
 }

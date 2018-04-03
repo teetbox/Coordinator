@@ -8,31 +8,21 @@
 
 import UIKit
 
-class TwoCoordinator: Coordinator {
+class TwoCoordinator: AppCoordinator {
     
-    let window: UIWindow
-    
-    init(window: UIWindow) {
-        self.window = window
+    override func start() {
+        let twoVM = TwoViewModel()
+        twoVM.coordinator = self
+        let twoVC = TwoViewController(viewModel: twoVM)
         
-        print("Two Coordinator init")
-    }
-    
-    deinit {
-        print("Two Coordinator deinit")
-    }
-    
-    func start() {
-        let twoViewMode = TwoViewModel()
-        twoViewMode.coordinator = self
-        let twoViewController = TwoViewController(viewModel: twoViewMode)
-        
-        let topViewController = UIApplication.topViewController()
-        topViewController?.navigationController?.pushViewController(twoViewController, animated: true)
+        let topNavi = UIApplication.topNaviController()
+        topNavi?.pushViewController(twoVC, animated: true)
     }
     
 }
 
 extension TwoCoordinator: TwoViewModelCoordinator {
-    
+    func toMenu() {
+        ThreeCoordinator(window: window).start()
+    }
 }

@@ -9,19 +9,15 @@
 import Foundation
 
 protocol TwoViewModelCoordinator {
-    
+    func toMenu()
 }
 
-class TwoViewModel: ViewModel {
+class TwoViewModel: ViewModelProtocol {
     
     var coordinator: TwoViewModelCoordinator?
-    
-    init() {
-        print("Two VM init")
-    }
-    
-    deinit {
-        print("Two VM deinit")
+
+    func showMenu() {
+        coordinator?.toMenu()
     }
     
 }

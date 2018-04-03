@@ -1,5 +1,5 @@
 //
-//  UIApplication+TopViewController.swift
+//  UIApplication+TopController.swift
 //  TC
 //
 //  Created by Matt Tian on 02/04/2018.
@@ -23,6 +23,10 @@ extension UIApplication {
             return topViewController(controller: presented)
         }
         return controller
+    }
+    
+    class func topNaviController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UINavigationController? {
+        return topViewController(controller: controller)?.navigationController
     }
     
 }
