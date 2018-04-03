@@ -10,7 +10,7 @@ import UIKit
 
 var coordinatorStack = Stack<String>()
 
-class AppCoordinator: CoordinatorProtocol {
+class AppCoordinator {
     
     let window: UIWindow
     let shouldToMain = true

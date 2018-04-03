@@ -25,7 +25,6 @@
 		C9D4FEB92072F9470058E971 /* ThreeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEB82072F9470058E971 /* ThreeCoordinator.swift */; };
 		C9D4FEBB2072FCC50058E971 /* ThreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEBA2072FCC50058E971 /* ThreeViewModel.swift */; };
 		C9D4FEBD2072FD7D0058E971 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEBC2072FD7D0058E971 /* ViewModelProtocol.swift */; };
-		C9D4FEBF2072FECB0058E971 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEBE2072FECB0058E971 /* CoordinatorProtocol.swift */; };
 		C9D4FEC12073013C0058E971 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEC02073013C0058E971 /* ThreeViewController.swift */; };
 		C9D4FEC42073422A0058E971 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEC32073422A0058E971 /* Stack.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 		C9D4FEB82072F9470058E971 /* ThreeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeCoordinator.swift; sourceTree = "<group>"; };
 		C9D4FEBA2072FCC50058E971 /* ThreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewModel.swift; sourceTree = "<group>"; };
 		C9D4FEBC2072FD7D0058E971 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		C9D4FEBE2072FECB0058E971 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		C9D4FEC02073013C0058E971 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		C9D4FEC32073422A0058E971 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +100,6 @@
 		C9CA56B92071A16E0063B304 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				C9D4FEBE2072FECB0058E971 /* CoordinatorProtocol.swift */,
 				C9D4FEB62072F88C0058E971 /* AppCoordinator.swift */,
 				C9CA56C02071A1DD0063B304 /* OneCoordinator.swift */,
 				C9CA56C22071A1F50063B304 /* TwoCoordinator.swift */,
@@ -234,7 +231,6 @@
 				C9CA56C72071A8C50063B304 /* ViewModelController.swift in Sources */,
 				C9D4FEB52072F1BC0058E971 /* UIColor+HEXString.swift in Sources */,
 				C9CA56B82071A1250063B304 /* TwoViewController.swift in Sources */,
-				C9D4FEBF2072FECB0058E971 /* CoordinatorProtocol.swift in Sources */,
 				C9D4FEB32072F1BC0058E971 /* UIView+Constraint.swift in Sources */,
 				C9CA56BD2071A1AA0063B304 /* OneViewModel.swift in Sources */,
 				C9D4FEB92072F9470058E971 /* ThreeCoordinator.swift in Sources */,
