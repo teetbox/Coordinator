@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OneViewController: ViewModelController<OneViewModel> {
+class OneViewController: BaseViewController<OneViewModel> {
     
     // MARK: - View
     

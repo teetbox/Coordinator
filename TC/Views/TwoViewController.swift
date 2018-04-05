@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TwoViewController: ViewModelController<TwoViewModel>, UITableViewDataSource, UITableViewDelegate {
+class TwoViewController: BaseViewController<TwoViewModel>, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - View
     

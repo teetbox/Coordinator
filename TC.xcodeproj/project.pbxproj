@@ -17,7 +17,7 @@
 		C9CA56C12071A1DD0063B304 /* OneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56C02071A1DD0063B304 /* OneCoordinator.swift */; };
 		C9CA56C32071A1F50063B304 /* TwoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56C22071A1F50063B304 /* TwoCoordinator.swift */; };
 		C9CA56C52071A6100063B304 /* UIApplication+TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56C42071A6100063B304 /* UIApplication+TopController.swift */; };
-		C9CA56C72071A8C50063B304 /* ViewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56C62071A8C50063B304 /* ViewModelController.swift */; };
+		C9CA56C72071A8C50063B304 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56C62071A8C50063B304 /* BaseViewController.swift */; };
 		C9D4FEB32072F1BC0058E971 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEB02072F1BC0058E971 /* UIView+Constraint.swift */; };
 		C9D4FEB42072F1BC0058E971 /* UIApplication+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEB12072F1BC0058E971 /* UIApplication+StatusBar.swift */; };
 		C9D4FEB52072F1BC0058E971 /* UIColor+HEXString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FEB22072F1BC0058E971 /* UIColor+HEXString.swift */; };
@@ -42,7 +42,7 @@
 		C9CA56C02071A1DD0063B304 /* OneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCoordinator.swift; sourceTree = "<group>"; };
 		C9CA56C22071A1F50063B304 /* TwoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCoordinator.swift; sourceTree = "<group>"; };
 		C9CA56C42071A6100063B304 /* UIApplication+TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopController.swift"; sourceTree = "<group>"; };
-		C9CA56C62071A8C50063B304 /* ViewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelController.swift; sourceTree = "<group>"; };
+		C9CA56C62071A8C50063B304 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C9D4FEB02072F1BC0058E971 /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
 		C9D4FEB12072F1BC0058E971 /* UIApplication+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+StatusBar.swift"; sourceTree = "<group>"; };
 		C9D4FEB22072F1BC0058E971 /* UIColor+HEXString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEXString.swift"; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		C9CA56BA2071A1790063B304 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C9CA56C62071A8C50063B304 /* ViewModelController.swift */,
+				C9CA56C62071A8C50063B304 /* BaseViewController.swift */,
 				C9CA56A72071A0BF0063B304 /* OneViewController.swift */,
 				C9CA56B72071A1250063B304 /* TwoViewController.swift */,
 				C9D4FEC02073013C0058E971 /* ThreeViewController.swift */,
@@ -228,7 +228,7 @@
 				C9CA56C12071A1DD0063B304 /* OneCoordinator.swift in Sources */,
 				C9CA56BF2071A1C50063B304 /* TwoViewModel.swift in Sources */,
 				C9CA56A62071A0BF0063B304 /* AppDelegate.swift in Sources */,
-				C9CA56C72071A8C50063B304 /* ViewModelController.swift in Sources */,
+				C9CA56C72071A8C50063B304 /* BaseViewController.swift in Sources */,
 				C9D4FEB52072F1BC0058E971 /* UIColor+HEXString.swift in Sources */,
 				C9CA56B82071A1250063B304 /* TwoViewController.swift in Sources */,
 				C9D4FEB32072F1BC0058E971 /* UIView+Constraint.swift in Sources */,

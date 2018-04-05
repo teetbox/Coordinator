@@ -1,5 +1,5 @@
 //
-//  ViewModelController.swift
+//  BaseViewController.swift
 //  TC
 //
 //  Created by Matt Tian on 02/04/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewModelController<V: ViewModelProtocol>: UIViewController {
+class BaseViewController<V: ViewModelProtocol>: UIViewController {
     
     let viewModel: V
     
