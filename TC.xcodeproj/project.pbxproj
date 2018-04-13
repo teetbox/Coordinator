@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C967AD9B2080A1B4007F2E83 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967AD9A2080A1B4007F2E83 /* CoordinatorProtocol.swift */; };
 		C9CA56A62071A0BF0063B304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56A52071A0BF0063B304 /* AppDelegate.swift */; };
 		C9CA56A82071A0BF0063B304 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA56A72071A0BF0063B304 /* OneViewController.swift */; };
 		C9CA56AD2071A0BF0063B304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9CA56AC2071A0BF0063B304 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C967AD9A2080A1B4007F2E83 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		C9CA56A22071A0BF0063B304 /* TC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CA56A52071A0BF0063B304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CA56A72071A0BF0063B304 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		C9CA56B92071A16E0063B304 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				C967AD9A2080A1B4007F2E83 /* CoordinatorProtocol.swift */,
 				C9D4FEB62072F88C0058E971 /* AppCoordinator.swift */,
 				C9CA56C02071A1DD0063B304 /* OneCoordinator.swift */,
 				C9CA56C22071A1F50063B304 /* TwoCoordinator.swift */,
@@ -233,6 +236,7 @@
 				C9CA56B82071A1250063B304 /* TwoViewController.swift in Sources */,
 				C9D4FEB32072F1BC0058E971 /* UIView+Constraint.swift in Sources */,
 				C9CA56BD2071A1AA0063B304 /* OneViewModel.swift in Sources */,
+				C967AD9B2080A1B4007F2E83 /* CoordinatorProtocol.swift in Sources */,
 				C9D4FEB92072F9470058E971 /* ThreeCoordinator.swift in Sources */,
 				C9D4FEC12073013C0058E971 /* ThreeViewController.swift in Sources */,
 				C9CA56C52071A6100063B304 /* UIApplication+TopController.swift in Sources */,
