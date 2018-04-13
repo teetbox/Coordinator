@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThreeViewController: ViewModelController<ThreeViewModel> {
+class ThreeViewController: BaseViewController<ThreeViewModel> {
     
     // MARK: - View
     
